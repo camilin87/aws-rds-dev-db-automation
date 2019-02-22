@@ -1,5 +1,10 @@
 # Development  
 
+## Docs  
+
+https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/RDS.html
+https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ElasticBeanstalk.html
+
 ## Prerequisites  
 
 - Attach the `DEV-DB-Creation` policy to your IAM user  
