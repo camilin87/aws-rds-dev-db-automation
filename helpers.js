@@ -1,5 +1,4 @@
 module.exports = {
-    sortRdsSnapshot: (a, b) => {
-        return a.SnapshotCreateTime > b.SnapshotCreateTime ? -1 : 1
-    }
+    sortRdsSnapshot: (a, b) => a.SnapshotCreateTime > b.SnapshotCreateTime ? -1 : 1,
+    todayString: () => new Date().toISOString().split('T')[0]
 }
