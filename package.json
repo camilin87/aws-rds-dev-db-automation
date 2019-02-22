@@ -1,6 +1,11 @@
 {
   "name": "scorbot-dev-db-automation",
   "version": "1.0.0",
+
+  "scripts": {
+    "start": "node main.js"
+  },
+
   "dependencies": {
     "mssql": "^4.3.2"
   }
