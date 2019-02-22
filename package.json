@@ -1,0 +1,7 @@
+{
+  "name": "scorbot-dev-db-automation",
+  "version": "1.0.0",
+  "dependencies": {
+    "mssql": "^4.3.2"
+  }
+}
