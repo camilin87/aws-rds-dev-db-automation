@@ -24,3 +24,9 @@ DevOps project to automate the creation of a fresh Clone from the production dat
 ```
 
 - Create an EC2 `DEV-DB-Creation` IAM role and attach the `DEV-DB-Creation` policy  
+
+## Usage  
+
+```bash
+npm run default-config
+```

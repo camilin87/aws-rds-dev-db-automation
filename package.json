@@ -2,6 +2,7 @@
   "name": "scorbot-dev-db-automation",
   "version": "1.0.0",
   "scripts": {
+    "default-config": "node main-default-config.js",
     "start": "node main.js"
   },
   "dependencies": {
