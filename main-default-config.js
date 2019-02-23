@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 var config = {
     restore: {
         enabled: false,
@@ -33,4 +35,16 @@ var config = {
     }
 }
 
-console.log('DEFAULT_CONFIG', config)
+const outputPath = './config.json'
+
+console.log(`Writing default config to ${outputPath}`)
+
+fs.writeFile(outputPath, JSON.stringify(config), 'utf-8', (err) => {
+    if (err){
+        console.log('ERROR', err)
+        process.exit(1)
+    }
+
+    console.log('Completed')
+    process.exit(0)
+})
