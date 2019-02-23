@@ -1,5 +1,6 @@
 var config = {
     restore: {
+        enabled: false,
         region: 'us-east-1',
         prod: {
             dbIdentifier: 'PROD_DATABASE_NAME'
@@ -15,6 +16,20 @@ var config = {
             availabilityZone: 'us-east-1c',
             instanceClass: 'db.t2.small'
         }
+    },
+    updateConnectionString: {
+        enabled: false,
+        region: 'us-east-1',
+        environmentName: 'DEV_ENVIRONMENT_NAME',
+        connectionStringKey: 'CONNECTION_STRING_ENVIRONMENT_VARIABLE_NAME',
+        base64: true
+    },
+    sanitizeDevDatabase: {
+        enabled: false,
+        scripts: [
+            'script1.sql',
+            'script2.sql',
+        ]
     }
 }
 
