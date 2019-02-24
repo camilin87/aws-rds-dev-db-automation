@@ -30,13 +30,12 @@ var config = {
         username: 'MASTER_USERNAME',
         password: 'DEV_DATABASE_PASSWORD'
     },
-    updateConnectionString: {
+    updateMasterPassword: {
         enabled: false,
         region: 'us-east-1',
         timeout: 600,
-        environmentName: 'DEV_ENVIRONMENT_NAME',
-        connectionStringKey: 'CONNECTION_STRING_ENVIRONMENT_VARIABLE_NAME',
-        base64: true
+        dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
+        password: 'DEV_DATABASE_PASSWORD'
     },
     sanitizeDevDatabase: {
         enabled: true,
@@ -46,17 +45,18 @@ var config = {
             'script2.sql',
         ]
     },
-    updateMasterPassword: {
-        enabled: false,
-        region: 'us-east-1',
-        timeout: 600,
-        dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
-        password: 'DEV_DATABASE_PASSWORD'
-    },
     deleteOldDevDatabase: {
         enabled: false,
         region: 'us-east-1',
         databasePrefix: 'DEV_DATABASE_NAME'
+    },
+    updateConnectionString: {
+        enabled: false,
+        region: 'us-east-1',
+        timeout: 600,
+        environmentName: 'DEV_ENVIRONMENT_NAME',
+        connectionStringKey: 'CONNECTION_STRING_ENVIRONMENT_VARIABLE_NAME',
+        base64: true
     }
 }
 
