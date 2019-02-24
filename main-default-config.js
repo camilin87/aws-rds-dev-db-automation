@@ -33,6 +33,7 @@ var config = {
     updateConnectionString: {
         enabled: false,
         region: 'us-east-1',
+        timeout: 600,
         environmentName: 'DEV_ENVIRONMENT_NAME',
         connectionStringKey: 'CONNECTION_STRING_ENVIRONMENT_VARIABLE_NAME',
         base64: true
