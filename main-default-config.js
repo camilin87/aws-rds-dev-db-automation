@@ -11,7 +11,6 @@ var config = {
         },
         dev: {
             databasePrefix: 'DEV_DATABASE_NAME',
-            masterPassword: 'DEV_DATABASE_PASSWORD',
             securityGroups: ['sg-1', 'sg-2'],
             tags: [
                 { Key: 'db_type', Value: 'dev' },
@@ -44,6 +43,13 @@ var config = {
             'script1.sql',
             'script2.sql',
         ]
+    },
+    updateMasterPassword: {
+        enabled: false,
+        region: 'us-east-1',
+        timeout: 600,
+        dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
+        password: 'DEV_DATABASE_PASSWORD'
     },
     deleteOldDevDatabase: {
         enabled: false,
