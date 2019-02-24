@@ -35,6 +35,10 @@ var config = {
             'script1.sql',
             'script2.sql',
         ]
+    },
+    deleteOldDevDatabase: {
+        enabled: false,
+        databasePrefix: 'DEV_DATABASE_NAME'
     }
 }
 
