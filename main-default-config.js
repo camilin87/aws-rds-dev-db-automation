@@ -31,8 +31,10 @@ var config = {
         base64: true
     },
     sanitizeDevDatabase: {
-        enabled: false,
+        enabled: true,
         region: 'us-east-1',
+        dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
+        database: 'DATABASE_NAME',
         username: 'MASTER_USERNAME',
         password: 'DEV_DATABASE_PASSWORD',
         scripts: [
