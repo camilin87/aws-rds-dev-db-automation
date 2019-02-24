@@ -9,12 +9,12 @@ https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ElasticBeanstalk.html
 
 - Attach the `DEV-DB-Creation` policy to your IAM user  
 - Create a set of IAM credentials  
-- Configure the in the local `aws` cli under a `scorbot` profile  
+- Configure the in the local `aws` cli under a `aws_rds_dev_db` profile  
 
 This goes in `~/.aws/config`  
 
 ```
-[profile scorbot]
+[profile aws_rds_dev_db]
 region = us-east-1
 output = json
 ```
@@ -22,7 +22,7 @@ output = json
 This goes in `~/.aws/credentials`
 
 ```
-[scorbot]
+[aws_rds_dev_db]
 aws_access_key_id = AKIAAAAAAAAAAAAAAAA
 aws_secret_access_key = SUPER_SECRET
 ```
@@ -30,7 +30,7 @@ aws_secret_access_key = SUPER_SECRET
 - Use the correct AWS profile
 
 ```bash
-export AWS_DEFAULT_PROFILE=scorbot && export AWS_PROFILE=scorbot
+export AWS_DEFAULT_PROFILE=aws_rds_dev_db && export AWS_PROFILE=aws_rds_dev_db
 ```
 
 - Make sure the correct account is configured  
