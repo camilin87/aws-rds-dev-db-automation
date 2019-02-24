@@ -27,6 +27,8 @@ DevOps project to automate the creation of a fresh Clone from the production dat
 
 ## Usage  
 
+1- Generate the default configuration  
+
 ```bash
 npm run default-config
 ```
