@@ -34,6 +34,7 @@ var config = {
         enabled: true,
         region: 'us-east-1',
         dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
+        awsAccount: "AWS_ACCOUNT_ID",
         database: 'DATABASE_NAME',
         username: 'MASTER_USERNAME',
         password: 'DEV_DATABASE_PASSWORD',
