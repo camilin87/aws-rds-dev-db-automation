@@ -1,4 +1,5 @@
-const fs = require('fs')
+const rfr = require('rfr')
+const configHelper = rfr('lib/config')
 
 var config = {
     restore: {
@@ -35,6 +36,4 @@ var config = {
     }
 }
 
-const outputPath = './config.json'
-console.log(`Writing default config to ${outputPath}`)
-fs.writeFileSync(outputPath, JSON.stringify(config))
+configHelper.write(config)
