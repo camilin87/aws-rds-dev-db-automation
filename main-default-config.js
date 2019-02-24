@@ -23,26 +23,23 @@ var config = {
             multiAZ: false
         }
     },
+    connectionString: {
+        region: 'us-east-1',
+        dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
+        awsAccount: 'AWS_ACCOUNT_ID',
+        database: 'DATABASE_NAME',
+        username: 'MASTER_USERNAME',
+        password: 'DEV_DATABASE_PASSWORD'
+    },
     updateConnectionString: {
         enabled: false,
         region: 'us-east-1',
-        dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
-        awsAccount: "AWS_ACCOUNT_ID",
-        database: 'DATABASE_NAME',
-        username: 'MASTER_USERNAME',
-        password: 'DEV_DATABASE_PASSWORD',
         environmentName: 'DEV_ENVIRONMENT_NAME',
         connectionStringKey: 'CONNECTION_STRING_ENVIRONMENT_VARIABLE_NAME',
         base64: true
     },
     sanitizeDevDatabase: {
         enabled: true,
-        region: 'us-east-1',
-        dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
-        awsAccount: "AWS_ACCOUNT_ID",
-        database: 'DATABASE_NAME',
-        username: 'MASTER_USERNAME',
-        password: 'DEV_DATABASE_PASSWORD',
         scripts: [
             'script1.sql',
             'script2.sql',
@@ -50,6 +47,7 @@ var config = {
     },
     deleteOldDevDatabase: {
         enabled: false,
+        region: 'us-east-1',
         databasePrefix: 'DEV_DATABASE_NAME'
     }
 }
