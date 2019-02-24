@@ -40,6 +40,7 @@ var config = {
     },
     sanitizeDevDatabase: {
         enabled: true,
+        maxConnectionAttempts: 100,
         scripts: [
             'script1.sql',
             'script2.sql',
