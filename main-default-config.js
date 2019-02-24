@@ -5,6 +5,7 @@ var config = {
     restore: {
         enabled: false,
         region: 'us-east-1',
+        timeout: 600,
         prod: {
             dbIdentifier: 'PROD_DATABASE_NAME'
         },
