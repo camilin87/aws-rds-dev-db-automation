@@ -32,6 +32,9 @@ var config = {
     },
     sanitizeDevDatabase: {
         enabled: false,
+        region: 'us-east-1',
+        username: 'MASTER_USERNAME',
+        password: 'DEV_DATABASE_PASSWORD',
         scripts: [
             'script1.sql',
             'script2.sql',
