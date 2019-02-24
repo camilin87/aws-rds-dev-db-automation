@@ -5,7 +5,7 @@ var config = {
     restore: {
         enabled: false,
         region: 'us-east-1',
-        timeout: 600,
+        timeout: 1200,
         prod: {
             dbIdentifier: 'PROD_DATABASE_NAME'
         },
@@ -33,7 +33,7 @@ var config = {
     updateMasterPassword: {
         enabled: false,
         region: 'us-east-1',
-        timeout: 600,
+        timeout: 1200,
         dbIdentifier: 'WILL_GET_OVERWRITTEN_IF_RESTORE_RUN',
         password: 'DEV_DATABASE_PASSWORD'
     },
@@ -53,7 +53,7 @@ var config = {
     updateConnectionString: {
         enabled: false,
         region: 'us-east-1',
-        timeout: 600,
+        timeout: 1200,
         environmentName: 'DEV_ENVIRONMENT_NAME',
         connectionStringKey: 'CONNECTION_STRING_ENVIRONMENT_VARIABLE_NAME',
         base64: true
