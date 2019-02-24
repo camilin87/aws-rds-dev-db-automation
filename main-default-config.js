@@ -17,7 +17,9 @@ var config = {
                 { Key: 'automated_restore', Value: 'true' }
             ],
             availabilityZone: 'us-east-1c',
-            instanceClass: 'db.t2.small'
+            instanceClass: 'db.t2.small',
+            publiclyAccessible: false,
+            multiAZ: false
         }
     },
     updateConnectionString: {
