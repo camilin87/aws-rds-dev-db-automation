@@ -6,6 +6,7 @@
     "aws-rds-dev-db-automation": "./bin/aws-rds-dev-db-automation-proc"
   },
   "scripts": {
+    "delete-config": "node main-delete-config.js",
     "default-config": "node main-default-config.js",
     "start": "node main.js"
   },
