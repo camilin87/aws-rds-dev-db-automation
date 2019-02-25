@@ -27,8 +27,24 @@ DevOps project to automate the creation of a fresh Clone from the production dat
 
 ## Usage  
 
-1- Generate the default configuration  
+### Installation  
 
 ```bash
-npm run default-config
+npm i -g aws-rds-dev-db-automation
+```
+
+### Generate the default configuration  
+
+The first time the program runs it will write a default configuration to `./config.json`  
+
+```bash
+aws-rds-dev-db-automation
+```
+
+### Run the automation tasks  
+
+Run the program once the configuration has been properly edited. The file `defaultConfig.js` contains all the possible parameters.  
+
+```bash
+aws-rds-dev-db-automation
 ```
