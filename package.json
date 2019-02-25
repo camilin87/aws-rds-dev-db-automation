@@ -1,6 +1,7 @@
 {
   "name": "aws-rds-dev-db-automation",
   "version": "0.1.0",
+  "description": "Some Helpers to automate certain AWS tasks such as restoring an RDS instance or updating ElasticBeanstalk environment settings",
   "bin": {
     "aws-rds-dev-db-automation": "./bin/aws-rds-dev-db-automation-proc"
   },
@@ -16,5 +17,22 @@
   },
   "bundledDependencies": [
     "rfr"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camilin87/aws-rds-dev-db-automation.git"
+  },
+  "keywords": [
+    "aws",
+    "automation",
+    "devops",
+    "rds",
+    "elasticbeanstalk"
+  ],
+  "author": "@camilin87",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camilin87/aws-rds-dev-db-automation/issues"
+  },
+  "homepage": "https://github.com/camilin87/aws-rds-dev-db-automation#readme"
 }
