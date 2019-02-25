@@ -43,7 +43,7 @@ aws-rds-dev-db-automation
 
 ### Run the automation tasks  
 
-Run the program once the configuration has been properly edited. The file `defaultConfig.js` contains all the possible parameters.  
+Run the program once the configuration has been properly edited. The file [`defaultConfig.js`](lib/defaultConfig.js) contains all the possible parameters.  
 
 ```bash
 aws-rds-dev-db-automation
