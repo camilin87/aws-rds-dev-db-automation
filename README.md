@@ -17,7 +17,11 @@ DevOps project to automate the creation of a fresh Clone from the production dat
                 "rds:*",
                 "ec2:*",
                 "s3:*",
-                "cloudformation:*"
+                "cloudformation:*",
+                "elasticloadbalancing:*",
+                "autoscaling:*",
+                "cloudwatch:*",
+                "sns:*"
             ],
             "Resource": "*"
         }
