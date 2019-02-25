@@ -1,6 +1,9 @@
 {
   "name": "aws-rds-dev-db-automation",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "bin": {
+    "aws-rds-dev-db-automation": "./bin/aws-rds-dev-db-automation-proc"
+  },
   "scripts": {
     "default-config": "node main-default-config.js",
     "start": "node main.js"
@@ -10,5 +13,8 @@
     "aws-sdk": "^2.408.0",
     "mssql": "^4.3.2",
     "rfr": "^1.2.3"
-  }
+  },
+  "bundledDependencies": [
+    "rfr"
+  ]
 }
