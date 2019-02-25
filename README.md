@@ -15,7 +15,9 @@ DevOps project to automate the creation of a fresh Clone from the production dat
             "Action": [
                 "elasticbeanstalk:*",
                 "rds:*",
-                "ec2:*"
+                "ec2:*",
+                "s3:*",
+                "cloudformation:*"
             ],
             "Resource": "*"
         }
@@ -24,6 +26,9 @@ DevOps project to automate the creation of a fresh Clone from the production dat
 ```
 
 - Create an EC2 `DEV-DB-Creation` IAM role and attach the `DEV-DB-Creation` policy  
+- If running in EC2 assign the role to the EC2 instance  
+
+**NOTE**: This is a suggested policy. Feel free to harden it as you feel appropriate.  
 
 ## Usage  
 
